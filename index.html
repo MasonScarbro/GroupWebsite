@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(30% - 40px);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            margin: 0 0 10px;
+        }
+        .bio {
+            display: none; /* Initially hide the bio section */
+            margin-top: 10px;
+            color: #555;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .bio img {
+        width: 36px;
+        height: 36px;
+            padding: 4px;
+        vertical-align: middle;
+        }
+        .profile {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meet Our Team</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>John Doe</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    </div>
+    <div class="card">
+        <h2>Mason Scarbro</h2>
+        <a><img class="profile" src="img/120221711.png"></a>
+        <p>Backend Developer</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <div id="bio2" class="bio">
+            <p>Mason is a backend developer specializing in server-side logic, database management and Systems programming. He likes to dive Deep into the complexities of compilers, interpreters, and language tooling.
+            Projects usually focus on parsing, backend logic, and structure—less on the "fluff," more on the logic.<p>
+            <div class="inspirations">
+            <h4>Inspirations:</h4>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Compiler" target="_blank">Compilers</a> — The bridge between raw code and machine execution.</li>
+                <li><a href="https://en.wikipedia.org/wiki/Interpreter_(computing)" target="_blank">Interpreters</a> — Real-time insight into language execution.</li>
+                <li><a href="https://llvm.org/" target="_blank">LLVM</a> — Powerful framework for compiler construction.</li>
+                <li><a href="https://craftinginterpreters.com/" target="_blank">CI</a> — A book about crafting Interpreters.</li>
+            </ul>
+        </div>
+            <a href="https://github.com/MasonScarbro"><img src="img\github-brands-solid.svg" alt="Discord"></a>
+            <a href="https://www.linkedin.com/in/mason-scarbro-127932259/"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" alt="Discord"></a>
+        </div>
+
+
+    </div>
+    <div class="card">
+        <h2>Emily Johnson</h2>
+
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    </div>
+</div>
+
+<script>
+    function toggleBio(bioId) {
+        const bio = document.getElementById(bioId);
+        if (bio.style.display === "none" || bio.style.display === "") {
+            bio.style.display = "block";
+        } else {
+            bio.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
