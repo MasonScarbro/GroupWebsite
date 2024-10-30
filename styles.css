@@ -1,15 +1,32 @@
 .vincentName
 {
-font-family: 'Monospace', Monaco, monospace; /* Change to your desired font */
+font-family: 'Cursive', Lucidia Handwriting, "Lucida Grande"; /* Change to your desired font */
     /* You can also add more styling here */
     font-size: 24px; /* Example font size */
-    color: #150; /* Example text color */
+    color: #8a0f38; /* Example text color */
+}
+
+.vcGd
+{
+font-family: 'Cursive', Lucidia Handwriting, "Lucida Grande"; /* Change to your desired font */
+    /* You can also add more styling here */
+    font-size: 20px; /* Example font size */
+    color: #584149; /* Example text color */
 }
 
 .vcFavImg
 {
 font-family: 'Cursive', Lucidia Handwriting, cursive; /* Change to your desired font */
     /* You can also add more styling here */
-    font-size: 12px; /* Example font size */
-    color: #270; /* Example text color */
+    font-size: 18px; /* Example font size */
+    color: #7e1b3c; /* Example text color */
 }
+
+.vcAbtPar
+{
+font-family: 'Monospace', Monaco, monospace; /* Change to your desired font */
+    /* You can also add more styling here */
+    font-size: 12px; /* Example font size */
+    color: #33334d; /* Example text color */
+}
+
