@@ -1,0 +1,15 @@
+.vincentName
+{
+font-family: 'Monospace', Monaco, monospace; /* Change to your desired font */
+    /* You can also add more styling here */
+    font-size: 24px; /* Example font size */
+    color: #150; /* Example text color */
+}
+
+.vcFavImg
+{
+font-family: 'Cursive', Lucidia Handwriting, cursive; /* Change to your desired font */
+    /* You can also add more styling here */
+    font-size: 12px; /* Example font size */
+    color: #270; /* Example text color */
+}
