@@ -1,84 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css"> <!-- Check the path -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 10px;
-            padding: 20px;
-            flex: 1 1 calc(30% - 40px);
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        h2 {
-            margin: 0 0 10px;
-        }
-        .bio {
-            display: none; /* Initially hide the bio section */
-            margin-top: 10px;
-            color: #555;
-        }
-        button {
-            background: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-        .bio img {
-        width: 36px;
-        height: 36px;
-            padding: 4px;
-        vertical-align: middle;
-        }
-        .profile {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin: 10px 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
+    <h1 class = "MeetOurTeam" >Meet Our Team!</h1>
+    <!-- Example team logo -->
+    <img src="img/team-logo.png" alt="Team Logo" class="team-logo" width="300" height="240">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
 </header>
 
-<div class="container">
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
     <div class="card">
         <h2 class="jordanName">Jordan Koontz</h2>
         <img src="https://cdn.discordapp.com/attachments/886434869675175996/1301589360054894712/IMG_0143.JPG?ex=6725070d&is=6723b58d&hm=a127eb59df6f9caef1e8e1337e64cf74c35e19cadb53f35afcc24d41d6fdfa3a&" alt="picture" width="140" height="175"> <br>
@@ -95,12 +39,12 @@
         <a href="https://github.com/Jordannk99"><img src="https://cdn.discordapp.com/attachments/886434869675175996/1301596172636524656/github-2755064684.png?ex=672901e6&is=6727b066&hm=04d423230276e5895b6bc705da61909bcb7b348f899fb9ee2e6605d0abfb1a0f&" alt="GitHub" width="50"></a>
         <a href="https://www.linkedin.com/in/jordan-koontz-230510299/"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" alt="LinkedIn" width="50"></a>
         </div>
-    </div>
+    </div> <!-- Jordan -->
     <div class="card">
         <h2>Mason Scarbro</h2>
         <a><img class="profile" src="img/120221711.png"></a>
         <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <button class="ms-toggleBio" onclick="toggleBio('bio2')">Show Bio</button>
         <div id="bio2" class="bio">
             <p>Mason is a backend developer specializing in server-side logic, database management and Systems programming. He likes to dive Deep into the complexities of compilers, interpreters, and language tooling.
             Projects usually focus on parsing, backend logic, and structure—less on the "fluff," more on the logic.<p>
@@ -118,28 +62,28 @@
         </div>
 
 
-    </div>
+    </div> <!-- Mason -->
     <div class="card">
         <h2 class = "vincentName">Vincent Medina</h2>
-        <img src="https://cdn.discordapp.com/attachments/851175628580323390/1301307188698153034/image.jpg?ex=67240042&is=6722aec2&hm=de817d349158b97491d44043ed00ced68f000d250e5382d9056d5c5a04fe4475&" alt="sup" width="140" height="175"> <br>
+        <img src="https://pbs.twimg.com/media/GbUCmtKWUAAYY4n?format=jpg&name=large" alt="sup" width="140" height="175"> <br>
         <p class = "vcGd">Game Developer</p>
-        <button onclick="toggleBio('bio9')">Show Bio</button>
-        <div id="bio9" class="bio" style="display: none;">
+        <button class="vc-toggleBio" onclick="toggleBio('bio3')">Show Bio</button>
+        <div id="bio3" class="bio" style="display: none;">
             <h1 class = "vcFavImg"> My favorite image</h1>
-            <img src="https://pbs.twimg.com/media/FYwjltXVUAcHy0Q.jpg" alt="blah" width="600" height="600">
+            <img src="https://pbs.twimg.com/media/FYwjltXVUAcHy0Q.jpg" alt="blah" width="200" height="200">
             <h1 class = "vcFavImg"> About</h1>
             <h2 class = "vcAbtPar"> Hi, I like working with game engines like Unity and UE5. </h2>
             <h3 class = "vcAbtPar"> I enjoy working with game logic and AI the most!  </h3>
             <h4 class = "vcAbtPar"> An influential figure of mine is Eric Barone, because he's a legend solo-dev </h4>
             <h5 class = "vcFavImg"> An image that describes me</h5>
-            <img src="https://uploads.dailydot.com/2024/08/side-eye-horse-meme-template-.jpg?auto=compress&fm=pjpg" alt="sup" width="600" height="800"> <br>
-            <a href="https://github.com/chonnydesu">github :) </a> <br>
-            <a href="https://www.linkedin.com/in/vincent-medina-150761284/">linkedIn :)) </a> <br>
-            <a href="https://www.op.gg/summoners/na/peanise-NA1">opgg >:) </a>
+            <img src="https://uploads.dailydot.com/2024/08/side-eye-horse-meme-template-.jpg?auto=compress&fm=pjpg" alt="sup" width="200" height="200"> <br>
+            <a href="https://github.com/chonnydesu"><img src="https://cdn.discordapp.com/attachments/886434869675175996/1301596172636524656/github-2755064684.png?ex=672901e6&is=6727b066&hm=04d423230276e5895b6bc705da61909bcb7b348f899fb9ee2e6605d0abfb1a0f&" alt="GitHub" width="50"></a>
+            <a href="https://www.linkedin.com/in/vincent-medina-150761284/"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" alt="LinkedIn" width="50"></a>
+            <a href="https://www.op.gg/summoners/na/peanise-NA1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWa4yYvyFFHaSCE9fPCQSbxTloWaz6KBrEfg&s" alt="OPGG" width="50"></a>
+
 
         </div>
-    </div>
-
+    </div> <!-- Vincent -->
     <div class="card">
         <div class="EC-image-content">
             <span class="EC-overlay"></span>
@@ -164,21 +108,21 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    </div> <!-- Eli -->
 
 </div>
 
-<script>
-    function toggleBio(bioId) {
-        const bio = document.getElementById(bioId);
-        if (bio.style.display === "none" || bio.style.display === "") {
-            bio.style.display = "block";
-        } else {
-            bio.style.display = "none";
-        }
-    }
-</script>
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+
+    <h2 class = "MissionStmnt" > Our Mission Statement! </h2>
+    <p class = "Statement" >    We are students that are eager to learn more about front and back end development, as well the process of how codebases are implemented
+        Our goal this semester is to improve our individual coding abilities as well as teamwork skills.
+        We hope to apply what we've learned so far in this course to deliver a fun and unique project!
+    </p>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
 
 </body>
 </html>

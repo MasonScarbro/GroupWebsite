@@ -24,10 +24,54 @@ font-family: 'Cursive', Lucidia Handwriting, cursive; /* Change to your desired 
 
 .vcAbtPar
 {
+font-family: 'Cursive', Lucidia Handwriting, cursive; /* Change to your desired font */
+    /* You can also add more styling here */
+    font-size: 14px; /* Example font size */
+    color: #33334d; /* Example text color */
+}
+
+.vc-toggleBio {
+   background-color: #603020;
+   font-family: 'Playfair Display', serif;
+   font-size: 16px;
+}
+
+.MissionStmnt
+{
 font-family: 'Monospace', Monaco, monospace; /* Change to your desired font */
     /* You can also add more styling here */
-    font-size: 12px; /* Example font size */
-    color: #33334d; /* Example text color */
+    font-size: 26px; /* Example font size */
+    color:  #00b3b3; /* Example text color */
+}
+
+.Statement
+{
+font-family: 'Cursive', Lucidia Handwriting, "Lucida Grande"; /* Change to your desired font */
+    /* You can also add more styling here */
+    font-size: 24px; /* Example font size */
+    color:  #f2f2f2; /* Example text color */
+}
+
+.MeetOurTeam
+{
+font-family: 'SansSerif', "helvetica neue", SansSerif; /* Change to your desired font */
+    /* You can also add more styling here */
+    font-size: 36px; /* Example font size */
+    color:  #f2f2f2; /* Example text color */
+}
+
+.vc-toggleBio:hover {
+   background-color: #603020;
+}
+
+.ms-toggleBio {
+   background-color: #25744d;
+   font-family: 'Playfair Display', serif;
+   font-size: 16px;
+}
+
+.ms-toggleBio:hover {
+   background-color: #25744d;
 }
 
 /* ####
@@ -168,3 +212,94 @@ Elijah's card styling
    background-color: #FF5F00;
 }
 
+/*--------------------- IMPORTED CODE STARTS HERE ---------------------*/
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d26;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section styling */
+header {
+    background: #070713;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for team logo image */
+.team-logo {
+    margin-top: 10px;
+}
+
+/* Menu button styling */
+header nav {
+    margin-top: 10px;
+}
+
+header nav button {
+    background: #7733ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+header nav button:hover {
+    background: #0056b3;
+}
+
+/* Flex container for team bios and vision sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Card styling for individual team bios */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+/* Initially hide bio details */
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
