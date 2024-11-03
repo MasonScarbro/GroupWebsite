@@ -120,3 +120,51 @@ Elijah's card styling
 .EC-quote p {
     color: #999;
 }
+
+
+.jordanName {
+   font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+   font-size: 24px; /* Font size */
+   color: #000000; /* Bright modern orange */
+}
+
+
+.jcGd {
+   font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+   font-size: 22px; /* Font size */
+   color: #000000; /* Dark gray text color */
+}
+
+
+.jcAbtPar {
+   font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+   font-size: 16px; /* Font size for better readability */
+   color: #000000; /* Pure black text color */
+}
+
+
+.jcBio {
+   font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+   font-size: 16px; /* Font size for better readability */
+   color: #000000; /* Dark gray text color for bio */
+}
+
+
+.jcAbout {
+   font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+   font-size: 18px; /* Font size for heading */
+   color: #000000; /* Color for the heading */
+}
+
+
+.toggleBioButton {
+   background-color: #FF5F00;
+   font-family: 'Playfair Display', serif;
+   font-size: 16px;
+}
+
+
+.toggleBioButton:hover {
+   background-color: #FF5F00;
+}
+
