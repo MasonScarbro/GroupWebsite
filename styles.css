@@ -30,3 +30,93 @@ font-family: 'Monospace', Monaco, monospace; /* Change to your desired font */
     color: #33334d; /* Example text color */
 }
 
+/* ####
+Elijah's card styling
+#### */
+
+/* Resets margin, padding, and box-sizing for all elements*/
+.EC-image-content
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* slide-content class for defining horizontal margins within the main content area */
+.EC-slide-content{
+    margin: 0 40px;
+
+}
+/* Card styling - rounds the corners of each card element */
+.card{
+    border-radius: 25px;
+}
+/* Image and card content container for flex layout with centered alignment */
+.EC-image-content,
+.EC-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+/* EC-image-content specific padding and positioning for images */
+.EC-image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+/* Overlay styling to add a colored overlay over images */
+.EC-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+    border-radius: 25px 25px 0 25px;
+}
+/* Additional overlay styling to add a secondary color block */
+.EC-overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+/* EC-card-image for styling circular profile images */
+.EC-card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+/* EC-card-img class for image-specific adjustments within card-image */
+.EC-card-image .EC-card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+}
+/* Styling for the card name, including font weight and margin */
+.EC-name{
+    margin-top: 15px;
+}
+/* Description styling for card subtitle or role */
+.EC-description{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+/* Inspirations section for additional card content */
+.EC-inspirations {
+    margin-top: 15px;
+}
+/* Quote section styling with custom margins */
+.EC-quote{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.EC-quote p {
+    color: #999;
+}
