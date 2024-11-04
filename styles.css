@@ -74,41 +74,22 @@ font-family: 'SansSerif', "helvetica neue", SansSerif; /* Change to your desired
    background-color: #25744d;
 }
 
-/* ####
-Elijah's card styling
-#### */
+/*  ---------- Elijah's card styling ----------*/
 
-/* Resets margin, padding, and box-sizing for all elements*/
-.EC-image-content
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-/* slide-content class for defining horizontal margins within the main content area */
-.EC-slide-content{
-    margin: 0 40px;
 
-}
-/* Card styling - rounds the corners of each card element */
-.card{
-    border-radius: 25px;
-}
 /* Image and card content container for flex layout with centered alignment */
-.EC-image-content,
-.EC-card-content {
+.EC-image-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
-}
-
-/* EC-image-content specific padding and positioning for images */
-.EC-image-content{
     position: relative;
     row-gap: 5px;
-    padding: 25px 0;
 }
+
 /* Overlay styling to add a colored overlay over images */
 .EC-overlay{
     position: absolute;
@@ -117,14 +98,14 @@ Elijah's card styling
     height: 100%;
     width: 100%;
     background-color: #4070F4;
-    border-radius: 25px 25px 0 25px;
+    border-radius: 25px 25px 25px 25px;
 }
 /* Additional overlay styling to add a secondary color block */
 .EC-overlay::after{
     border-radius: 0 25px 0 0;
     background-color: #fff;
 }
-/* EC-card-image for styling circular profile images */
+/* for styling circular profile images */
 .EC-card-image{
     position: relative;
     height: 150px;
@@ -133,15 +114,15 @@ Elijah's card styling
     background-color: #fff;
     padding: 3px;
 }
-/* EC-card-img class for image-specific adjustments within card-image */
-.EC-card-image .EC-card-img{
+/* class for image-specific adjustments within card-image */
+.EC-card-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #4070F4;
 }
-/* Styling for the card name, including font weight and margin */
+/* Styling for the card name */
 .EC-name{
     margin-top: 15px;
 }
@@ -164,7 +145,6 @@ Elijah's card styling
 .EC-quote p {
     color: #999;
 }
-
 
 .jordanName {
    font-family: 'Playfair Display', serif; /* Use Playfair Display font */
@@ -270,7 +250,7 @@ header nav button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    flex: 1 1 calc(30% - 40px);
+    flex: 0 0 calc(30% - 40px);
     text-align: center;
     transition: transform 0.2s;
 }
